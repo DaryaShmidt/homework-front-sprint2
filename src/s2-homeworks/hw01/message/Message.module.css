@@ -1,31 +1,78 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
 }
 
 .text {
-
+    position: relative;
+    max-width: min(620px, calc(100vw - 190px));
+    padding: 7px 15px 8px 13px;
+    border-radius: 12px 12px 0 12px;
+    background: #06c;
 }
 
 .text:after {
-
+    content: '';
+    position: absolute;
+    right: -12px;
+    bottom: 0px;
+    width: 14px;
+    height: 14px;
+    background: #06c;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
 .name {
-
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 3px;
 }
 
 .messageText {
-
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
 }
 
 .time {
-
+    margin-top: 6px;
+    margin-right: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
 }
