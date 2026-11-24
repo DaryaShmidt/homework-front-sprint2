@@ -17,6 +17,7 @@ import s from './Clock.module.css'
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         clearInterval(timerId);
+        setTimerId(undefined);
 
     }
 
